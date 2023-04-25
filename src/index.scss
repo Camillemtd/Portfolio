@@ -1,0 +1,30 @@
+//Police ggogleFont
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Rubik:wght@300;400;500;600;700;800;900&family=Sigmar&display=swap');
+
+//color
+$colorTitle: #F49534;
+
+*, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Rubik',sans-serif;
+  background-color: #10183d;
+  color: white;
+  
+}
+// MODIFICATOR
+
+.display--flex, .flex--column, .justify--content{
+  display: flex;
+}
+
+.flex--column{
+  flex-direction: column;
+}
+.justify--content{
+  justify-content: center;
+}
+
