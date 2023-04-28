@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Contact/contact.scss'
+import moi from '../../assets/Images/bonhomme3.png'
 const Contact = () => {
     return (
         <div className='contact justify--content'>
@@ -55,7 +56,13 @@ const Contact = () => {
                 <figure className='bar'></figure>
                 <figure className='vitre'></figure>
             </figure>
-            <figure className='terrace'></figure>
+            <figure className='terrace'>
+                <img className='moi' src={moi} alt='moi'/>
+                <figure className='moiTalk justify--content'>
+                    <p>Hey, let's talk !</p>
+                    <figure></figure>
+                </figure>
+            </figure>
             
         </div>
     );

@@ -2,8 +2,7 @@
     padding-top: 100px;
     flex-direction: column;
     align-items: center;
-    animation: scale-up-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    background-color: none;
+    background-color: #10183d;
     .contact__sky{
         position: relative;
         height: 70vh;
@@ -15,6 +14,7 @@
         border-bottom: 0px;
         box-shadow: inset 2px 2px 10px rgb(119, 117, 117);
         overflow: hidden;
+        z-index: 2;
 
         .sun{
             position: absolute;
@@ -282,6 +282,7 @@
             width: 100%;
             background-color: #10183d;
             bottom: 80px;
+            z-index: 2;
         }
         .vitre{
             position: absolute;
@@ -290,16 +291,54 @@
             background-color: white;
             bottom: 0;
             opacity: 0.3;
+            z-index: 2;
         }
         
     }
     .terrace{
+        position: relative;
         height: 100px;
         width: 100vw;
         max-width: 500px;
         background-color: rgb(53,139,156);
         border-top: 2px solid black;
         box-shadow: inset 10px 10px 20px rgb(247, 246, 244);
+        
+        z-index: 300;
+        
+
+        .moi{
+            position: absolute;
+            background: none;
+            width: 650px;
+            top: -230px;
+            left: -270px;
+            z-index: 300;
+
+            
+
+        }
+        .moiTalk{
+            position: absolute;
+            top: -190px;
+            left: 120px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 10px black;
+            width: 120px;
+            height: 50px;
+            background-color: rgb(53,139,156);
+            z-index: 1000;
+            align-items: center;
+
+            p{
+                background: none;
+                text-shadow: 2px 2px black;
+                animation: typing 2s steps(30, end);
+                white-space: nowrap;
+                overflow: hidden;
+                
+            }
+        }
     }
 }
 
@@ -350,3 +389,12 @@
     }
   }
   
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }

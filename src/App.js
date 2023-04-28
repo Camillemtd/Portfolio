@@ -7,6 +7,7 @@ import Header from './componets/Header/Header';
 import Contact from './pages/Contact/Contact';
 import Error from './_utlis/Error/Error';
 import Footer from './componets/Footer/Footer'
+import WIP from './pages/WIP/WIP';
 
 const App = () => {
     return(
@@ -19,6 +20,7 @@ const App = () => {
 
               <Route path='/home' element={<Home/>}/>
               <Route path='/project' element={<Project/>}/>
+              <Route path='/wip' element={<WIP/>}/>
               <Route path='/contact' element={<Contact/>}/>
 
               <Route path='*' element={<Error/>}/>

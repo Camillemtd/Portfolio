@@ -28,7 +28,36 @@
             background-color:rgb(53,139,156) ;
             
         }
+       
    }
+   .githubIcon{
+        background-color: white;
+        width: 100%;
+        text-align: center;
+
+    }
+    a{
+        background-color: white;
+        text-align: center;
+        width: 60%;
+    }
+    .linkElement1{
+        background-color: white;
+        width: 100px;
+        border: #10183d 3px solid;
+        border-radius: 200px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+
+    }
+    .listLink{
+        margin-top: 100px;
+        background-color: rgb(53,139,156);
+        
+    }
    a:hover{
     color: #F49534;
    }

@@ -3,9 +3,15 @@
     position: fixed;
     z-index: 9999;
     justify-content: space-between;
+    background: none;
+    a{
+        background: none;
+    }
     h1{
         font-family: 'Sigmar', cursive;
         margin: 10px;
+        background: none;
+        
     }
   
     

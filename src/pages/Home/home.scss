@@ -1,0 +1,88 @@
+.home{
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #10183d;
+    
+   
+    .home__intro__flour{
+        background: none;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translate( -50%);
+        width: 300px;
+        z-index: 0;
+        
+        
+    }
+
+    .home__intro{
+        position: relative;
+        margin-top: 100px;
+        border-radius: 100px 100px 0px 0px;
+        font-size: 1.5rem;
+        padding: 40px 20px ;
+        background-color: rgb(53,139,156);
+        border-top: rgb(255, 106, 0) 2px solid;
+        box-shadow: 2px 2px 5px #F49534;
+        
+
+        
+    .home__introp{
+        border-radius: 100px 100px 0px 0px;
+        font-size: 1.5rem;
+        padding: 40px 20px ;
+        background-color: rgb(53,139,156);
+        
+        
+        
+    }
+    .custom-shape-divider-bottom-1682602959 {
+        position: absolute;
+        bottom: -20;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        
+        
+    }
+    
+    .custom-shape-divider-bottom-1682602959 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 137px;
+        background-color: rgb(53,139,156);
+    }
+    
+    .custom-shape-divider-bottom-1682602959 .shape-fill {
+        fill: #10183d;
+    }
+}
+    
+    h2{
+        position: relative;
+        font-size: 2rem;
+        margin-top: 150px;
+        font-family: 'Sigmar', cursive;
+        color: #F49534;
+    }
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+  }
+
+// tree skills 
