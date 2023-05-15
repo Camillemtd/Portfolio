@@ -1,6 +1,17 @@
+.menu__back{
+    position: absolute;
+    width: 500vw;
+    height: 500vh;
+    background-color: rgb(53,139,156) ;
+    border-radius: 2000px;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    top: -50%;
+    left: -190%;
+    transform: translate(-50%, -50%);
+}
 .menu{
     position: fixed;
-    background-color: rgb(53,139,156);
+    background:none;
     width: 100vw;
     height: 100vh;
     z-index: 1;
@@ -11,21 +22,22 @@
 
    .menu__nav{
         color: white;
-        background-color:rgb(53,139,156) ;
+        background:none; ;
         margin-top: 100px;
         margin-left: 20px;
         ul{
-            background-color:rgb(53,139,156) ;
+            background:none; ;
         }
         li{
-            background-color: rgb(53,139,156);
+            background:none;
             border: none;
-            animation: bounce-in-left 1.8s both;
+            animation: bounce-in-left 1.5s both;
+            animation-delay: 0.5s;
         }
         a{
             font-size: 2rem;
             font-family: 'Sigmar', cursive;
-            background-color:rgb(53,139,156) ;
+            background:none; ;
             
         }
        
@@ -34,12 +46,15 @@
         background-color: white;
         width: 100%;
         text-align: center;
+        
+       
 
     }
     a{
         background-color: white;
         text-align: center;
         width: 60%;
+        
     }
     .linkElement1{
         background-color: white;
@@ -50,12 +65,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        animation: bounce-in-fwd 1.1s both;
+        animation-delay: 0.6s;
        
 
     }
     .listLink{
         margin-top: 100px;
-        background-color: rgb(53,139,156);
+        background:none;
         
     }
    a:hover{
@@ -180,5 +197,64 @@
               animation-timing-function: ease-out;
     }
   }
+  @keyframes bounce-in-fwd {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: scale(0.84);
+              transform: scale(0.84);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    89% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
   
   
+ 
+  @media screen and (min-width: 768px) {
+   .menu__back{
+    animation: scale-up-center 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    left: -200%;
+   }
+  }

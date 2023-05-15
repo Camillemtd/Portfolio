@@ -1,0 +1,28 @@
+.wip__container{
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: center;
+
+    .wip__title{
+        margin-top: 40px;
+        color: #F49534;
+        font-family: 'Sigmar', cursive;
+        border: #F49534 2px solid;
+        padding: 5px;
+        border-radius: 50%;
+        text-align: center;
+        width: 200px;
+        
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .wip__container{
+         .wip__title{
+            font-size: 5rem;
+            width: 700px;
+
+         }
+    }
+ }

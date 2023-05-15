@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Contact/contact.scss'
 import moi from '../../assets/Images/bonhomme3.png'
+import ModalContact from '../../components/modalContact/ModalContact';
 const Contact = () => {
     return (
         <div className='contact justify--content'>
@@ -15,7 +16,7 @@ const Contact = () => {
                 
                     {/*2eme rangé  */}
                     
-                <figure className='bat30 bottom2 shadow__bat'></figure>
+                {/* <figure className='bat30 bottom2 shadow__bat'></figure>
                 <figure className='bat28 bottom2 shadow__bat'></figure>
                 <figure className='bat22 bottom2 shadow__bat'></figure>
                 <figure className='bat19 bottom2 shadow__bat'></figure>
@@ -29,7 +30,7 @@ const Contact = () => {
                 <figure className='bat29 bottom2 shadow__bat'></figure>
                 
 
-                    {/* 1er rangé */}
+                    
 
                 <figure className='bat1 bottom shadow__bat'></figure>
                 <figure className='bat2 bottom shadow__bat'></figure>
@@ -48,7 +49,7 @@ const Contact = () => {
                 <figure className='bat15 bottom shadow__bat'></figure>
                 <figure className='bat16 bottom shadow__bat'></figure>
                 <figure className='bat17 bottom shadow__bat'></figure>
-                <figure className='bat18 bottom shadow__bat'></figure>
+                <figure className='bat18 bottom shadow__bat'></figure> */}
                 
                 
 
@@ -60,10 +61,10 @@ const Contact = () => {
                 <img className='moi' src={moi} alt='moi'/>
                 <figure className='moiTalk justify--content'>
                     <p>Hey, let's talk !</p>
-                    <figure></figure>
+                    
                 </figure>
             </figure>
-            
+            <ModalContact />
         </div>
     );
 };

@@ -7,6 +7,7 @@ const Menu = () => {
     
     return openMenu ? (
         <>
+            <figure className='menu__back'></figure>
             <figure className='fa-xmark-back'></figure>
             <i className="fa-solid fa-xmark"onClick={() => setOpenMenu(false)} ></i>
             <div  className='menu'>

@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #10183d;
-    
+    overflow: hidden;
    
     .home__intro__flour{
         background: none;
@@ -63,6 +63,9 @@
     .custom-shape-divider-bottom-1682602959 .shape-fill {
         fill: #10183d;
     }
+    .shape-fill{
+        background: none;
+    }
 }
     
     h2{
@@ -86,3 +89,136 @@
   }
 
 // tree skills 
+
+
+.skills{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    max-width: 800px;
+    overflow-inline:initial;
+    .skills__tree{
+        position: absolute;
+        width: 485px;
+        left: 50%;
+        top: -100px;
+        transform: translate( -50%);
+        background: none;
+        
+
+    }
+    .skill{
+        color: #F49534;
+        position: absolute;
+        z-index: 4;
+        background: none;
+        width: 30px;
+        cursor: pointer;
+        transition: transform 0.6s;
+    }
+    .html{
+        top: 120px;
+        left: 23%;
+        fill: #E34F26;
+    }
+    .css{
+        fill: #1572B6;
+        top: 130px;
+        left: 43%;
+    }
+    .js{
+        fill:#F7DF1E ;
+        top: 185px;
+        left: 13%;
+    }
+    .sass{
+        fill:#CC6699 ;
+        top: 250px ;
+        left: 60%;
+    }
+    .mongoDB{
+        fill: #47A248;
+        top: 150px;
+        left: 72%;
+    }
+    .reactRouter{
+        fill:#CA4245 ;
+        top: 215px;
+        left: 40%;
+    }
+    .react{
+        top: 300px;
+        left: 30%;
+    }
+    .figma{
+        fill:#F24E1E ;
+        top: 320px;
+        left: 75%;
+    }
+    .skill:hover{
+        transform: scale(2);
+        
+    }
+}
+
+ // responsive Tablette 
+
+ @media screen and (min-width: 768px) {
+    .home{
+    }
+   .skills{
+    height: 100vh;
+    .skill{
+        width: 70px;
+    }
+    .skills__tree{
+        width: 1000px;
+        top: -300px;
+
+    }
+    .html{
+        top: 150px;
+
+    }
+    .css{
+        fill: #1572B6;
+        top: 130px;
+        left: 43%;
+    }
+    .js{
+        fill:#F7DF1E ;
+        top: 280px;
+        left: 13%;
+    }
+    .sass{
+        fill:#CC6699 ;
+        top: 450px ;
+        left: 60%;
+    }
+    .mongoDB{
+        fill: #47A248;
+        top: 200px;
+        left: 72%;
+    }
+    .reactRouter{
+        fill:#CA4245 ;
+        top: 315px;
+        left: 40%;
+    }
+    .react{
+        top: 500px;
+        left: 30%;
+    }
+    .figma{
+        fill:#F24E1E ;
+        top: 560px;
+        left: 75%;
+    }
+   
+   }
+   .skills{
+    height: 150vh;
+}
+    
+}
+
