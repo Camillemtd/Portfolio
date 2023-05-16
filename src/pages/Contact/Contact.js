@@ -14,44 +14,6 @@ const Contact = () => {
                 </div>
                 </figure>
                 
-                    {/*2eme rangé  */}
-                    
-                {/* <figure className='bat30 bottom2 shadow__bat'></figure>
-                <figure className='bat28 bottom2 shadow__bat'></figure>
-                <figure className='bat22 bottom2 shadow__bat'></figure>
-                <figure className='bat19 bottom2 shadow__bat'></figure>
-                <figure className='bat20 bottom2 shadow__bat'></figure>
-                <figure className='bat21 bottom2 shadow__bat'></figure>
-                <figure className='bat23 bottom2 shadow__bat'></figure>
-                <figure className='bat24 bottom2 shadow__bat'></figure>
-                <figure className='bat25 bottom2 shadow__bat'></figure>
-                <figure className='bat26 bottom2 shadow__bat'></figure>
-                <figure className='bat27 bottom2 shadow__bat'></figure>
-                <figure className='bat29 bottom2 shadow__bat'></figure>
-                
-
-                    
-
-                <figure className='bat1 bottom shadow__bat'></figure>
-                <figure className='bat2 bottom shadow__bat'></figure>
-                <figure className='bat3 bottom shadow__bat'></figure>
-                <figure className='bat4 bottom shadow__bat'></figure>
-                <figure className='bat5 bottom shadow__bat'></figure>
-                <figure className='bat6 bottom shadow__bat'></figure>
-                <figure className='bat7 bottom shadow__bat'></figure>
-                <figure className='bat8 bottom shadow__bat'></figure>
-                <figure className='bat9 bottom shadow__bat'></figure>
-                <figure className='bat10 bottom shadow__bat'></figure>
-                <figure className='bat11 bottom shadow__bat'></figure>
-                <figure className='bat12 bottom shadow__bat'></figure>
-                <figure className='bat13 bottom shadow__bat'></figure>
-                <figure className='bat14 bottom shadow__bat'></figure>
-                <figure className='bat15 bottom shadow__bat'></figure>
-                <figure className='bat16 bottom shadow__bat'></figure>
-                <figure className='bat17 bottom shadow__bat'></figure>
-                <figure className='bat18 bottom shadow__bat'></figure> */}
-                
-                
 
 
                 <figure className='bar'></figure>

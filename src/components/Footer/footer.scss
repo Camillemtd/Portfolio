@@ -7,6 +7,56 @@
     border-bottom: rgb(255, 106, 0) 2px solid;
     box-shadow: 1px 0px 3px #F49534;
     margin-top: 200px;
+
+
+    .footer__link{
+        
+        width: 100%;
+        background: rgb(53,139,156);
+        
+
+        li{
+            position: relative;
+            background-color: white;
+            width: 15%;
+            max-width: 60px;
+            padding: 15px 10px 15px 10px;
+            border-radius:500px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px #10183d solid;
+            z-index: 400;
+            cursor: pointer; 
+            margin: 10px; 
+        }
+        a{
+            position: relative;
+            background: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .footer__svg{
+            width: 70%;
+            background: none;
+            
+
+        }
+        li:hover .footer__svg path {
+            fill: white;
+          }
+        li:hover{
+            background-color: #10183d;
+        }
+        
+    }
+    p{
+        background-color: rgb(53,139,156);
+        text-align: center;
+        margin-top: 10px;
+    }
     
 }
 
