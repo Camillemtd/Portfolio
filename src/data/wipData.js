@@ -1,4 +1,4 @@
-import zoukushiAi from '../assets/zoukushi.png'
+import zoukushiAi from '../assets/Images/zoukushi.png'
 import weabove from '../assets/Images/weabove.png'
 const wipProjects =  [
     {

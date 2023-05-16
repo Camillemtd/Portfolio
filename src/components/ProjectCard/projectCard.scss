@@ -57,6 +57,7 @@
                 margin-right: 10px;
                 background: none;
                 width: 10%;
+                
             }
             svg{
                 width: 100%;
@@ -81,6 +82,9 @@
         transform: scale(2);
     }
     
+}
+.display--none{
+    display: none;
 }
 @media screen and (min-width: 1024px) {
    .projectCard{

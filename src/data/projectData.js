@@ -1,5 +1,6 @@
 import kasa from '../assets/Images/kasa.png'
 import booki from '../assets/Images/Booki.png'
+import grimoire from '../assets/Images/monvieuxgrimoire.png'
 const projects =  [
     {
         title:'Kasa',
@@ -22,6 +23,10 @@ const projects =  [
     {
         title : 'Mon Vieu Grimoire',
         description:'My first backend project with Node.js and a MongoDB database.',
+        image: grimoire,
+        date: "avril 2023",
+        lienGit:'https://github.com/Camillemtd/Mon-vieux-Grimoire-'
+        
         
     }
     
