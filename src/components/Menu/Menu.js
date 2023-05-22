@@ -4,7 +4,10 @@ import '../Menu/menu.scss'
 
 const Menu = () => {
     const [openMenu, setOpenMenu] = useState(false)
-    
+    const handleMenuClick = () => {
+        window.scrollTo(0, 0);
+        setOpenMenu(false)
+      };
     return openMenu ? (
         <>
             <figure className='menu__back'></figure>
@@ -13,10 +16,10 @@ const Menu = () => {
             <div  className='menu'>
                 <nav className='menu__nav'>
                     <ul>
-                        <li><NavLink to='/home' onClick={() => setOpenMenu(false)}>HOME</NavLink></li>
-                        <li><NavLink to='/project' onClick={() => setOpenMenu(false)}>PROJECT</NavLink></li>
-                        <li><NavLink to='/wip' onClick={() => setOpenMenu(false)}>WIP</NavLink></li>
-                        <li><NavLink to='/contact' onClick={() => setOpenMenu(false)}>CONTACT</NavLink></li> 
+                        <li><NavLink to='/home' onClick={handleMenuClick}>HOME</NavLink></li>
+                        <li><NavLink to='/project' onClick={handleMenuClick}>PROJECT</NavLink></li>
+                        <li><NavLink to='/wip' onClick={handleMenuClick}>WIP</NavLink></li>
+                        <li><NavLink to='/contact' onClick={handleMenuClick}>CONTACT</NavLink></li> 
                     </ul>
                 </nav>
                 
