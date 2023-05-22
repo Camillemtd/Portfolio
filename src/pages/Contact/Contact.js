@@ -1,21 +1,69 @@
 import React from 'react';
 import '../Contact/contact.scss'
 import moi from '../../assets/Images/bonhomme3.png'
-import ModalContact from '../../components/modalContact/ModalContact';
 const Contact = () => {
+    let webhookUrl = process.env.REACT_APP_DISCORD_WEB_HOOK;
+    
+    function sendMessage(e){
+        e.preventDefault();
+        console.log(webhookUrl)
+        const date = new Date();
+        const userName = document.getElementById("name").value;
+        const userEmail = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        const messageContent = `
+            ------------------------
+            *${date}* 
+
+            __**Username**__ : ${userName}
+            __**Email**__ : ${userEmail} 
+            __**Message**__ : ${message}
+            `;
+        
+            if (userName && userEmail && message) {
+                fetch(webhookUrl, {
+                  body: JSON.stringify({
+                    content: messageContent,
+                  }),
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  method: "POST",
+                })
+                .then(function () {
+                    
+                    alert('message envoyé')
+                  })
+                  .catch(function (error) {
+                    console.error(error);
+                    alert("There was an error. " + error);
+                  });
+              } else {
+                alert("Please fill in all information.");
+              }
+            
+        
+
+    }
     return (
         <div className='contact justify--content'>
-            <figure className='contact__sky'>
-                <figure className='sun'>
-                <div className="custom-shape-divider-top-1682098668">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
-                    </svg>
-                </div>
-                </figure>
+            <h2>CONTACT</h2>
+            <figure className='contact__sky justify--content'>
+            <div className="custom-shape-divider-top-1684508191">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 598.97 114.72 1200 0z" className="shape-fill"></path>
+                </svg>
+            </div>
+                <form>
+                    <label htmlFor='name'>Name</label>
+                    <input id='name' placeholder='Greg' required type="text"></input>
+                    <label htmlFor='email'>Email</label>
+                    <input id='email' placeholder='gregou@hotmail.com' required type='email'></input>
+                    <label htmlFor='message'>Message</label>
+                    <textarea id='message' placeholder='I like your work' required rows='6'></textarea>
+                    <button id='sendBtn' onClick={sendMessage}>Send</button>
+                </form>
                 
-
-
                 <figure className='bar'></figure>
                 <figure className='vitre'></figure>
             </figure>
@@ -26,7 +74,7 @@ const Contact = () => {
                     
                 </figure>
             </figure>
-            <ModalContact />
+            
         </div>
     );
 };

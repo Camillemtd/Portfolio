@@ -6,6 +6,8 @@
     flex-direction: column;
     border-radius: 10px;
     margin-bottom: 40px;
+    animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
     
     .cadre{
         width:80% ;
@@ -22,8 +24,8 @@
     }
     .cartelBack{
         position: absolute;
-        width: 100vw;
-        height: 400vh;
+        width: 105%;
+        height: 300vh;
         background-color: rgb(0, 0, 0);
         z-index: 2;
         opacity: 0.6;
@@ -86,6 +88,18 @@
 .display--none{
     display: none;
 }
+
+@keyframes fade-in-bottom {
+    0% {
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 @media screen and (min-width: 1024px) {
    .projectCard{
         width: 65%;

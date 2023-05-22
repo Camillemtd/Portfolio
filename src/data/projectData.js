@@ -25,7 +25,8 @@ const projects =  [
         description:'My first backend project with Node.js and a MongoDB database.',
         image: grimoire,
         date: "avril 2023",
-        lienGit:'https://github.com/Camillemtd/Mon-vieux-Grimoire-'
+        lienGit:'https://github.com/Camillemtd/Mon-vieux-Grimoire-',
+        lien: 'none'
         
         
     }

@@ -3,277 +3,84 @@
     flex-direction: column;
     align-items: center;
     background-color: #10183d;
-    
+    overflow: hidden;
+    h2{
+        margin-top: 40px;
+        margin-bottom: 60px;
+        color: #F49534;
+        font-family: 'Sigmar', cursive;
+        border: #F49534 2px solid;
+        padding: 5px;
+        border-radius: 50%;
+        text-align: center;
+        width: 200px;
+    }
     .contact__sky{
         position: relative;
-        height: 70vh;
+        height: 90vh;
         width: 100vw;
         
-        background-color: pink;
-        border-radius: 1000px 1000px 0px 0px ;
-        border: solid 30px rgb(53,139,156) ;
+        background: rgb(53,139,156);
+        border-radius: 10px 10px 0px 0px;
+        border: solid 1px orangered ;
         border-bottom: 0px;
-        box-shadow: inset 2px 2px 10px rgb(119, 117, 117);
         overflow: hidden;
         z-index: 2;
-
-        .sun{
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background-color: #F49534;
-            top: 15%;
-            right: 15%;
-            box-shadow: 0 0 10px 5px purple;
-            animation: spin 8s linear infinite, pulse 3s ease-in-out infinite;
-            overflow: hidden;
+        .custom-shape-divider-top-1684508191 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          overflow: hidden;
+          line-height: 0;
+          z-index: 0;
+      }
+        .custom-shape-divider-top-1684508191 svg {
+          position: relative;
+          display: block;
+          width: calc(100% + 1.3px);
+          height: 500px;
+          background: rgb(53,139,156);
+          
+      }
+      
+        .custom-shape-divider-top-1684508191 .shape-fill {
+            fill: pink;
             
+        }
+        form{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            align-items: center;
+            width: 95%;
+            background: none;
+            margin-top: 100px;
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
-            .custom-shape-divider-top-1682098668 {
-                position: absolute;
-                top: 40%;
-                left: 0;
-                width: 100%;
-                overflow: hidden;
-                line-height: 0;
-                transform: rotate(180deg);
+            label, input, textarea{
+                background-color: white;
+                width: 95%;
+                color: black;
+                border: 3px double rgb(53,139,156);
+                padding: 10px;
+                resize: none;
             }
-            
-            .custom-shape-divider-top-1682098668 svg {
-                position: relative;
-                display: block;
-                width: calc(100% + 1.3px);
-                height: 20px;
+            input{
+                height: 40px;
             }
-            
-            .custom-shape-divider-top-1682098668 .shape-fill {
-                fill: #9013FE;
+            button{
+                width: 95%;
+                background-color: #F49534;
+                height: 40px;
+                cursor: pointer;
             }
-
         }
 
-        // batiment du bas 
-        .bat1{
-            position: absolute;
-            height: 18%;
-            width: 6%;
-            background-color: rgb(53,139,156);
-            left: 3%;
         }
-        .bat2{
-            position: absolute;
-            height: 12%;
-            width: 7%;
-            background-color: purple;
-        }
-        .bat3{
-            position: absolute;
-            height: 15%;
-            width: 6%;
-            background-color: orange;
-            left: 6%;
-            
-        }
-        .bat4{
-            position: absolute;
-            height: 12%;
-            width: 8%;
-            background-color: rgb(53,139,156);
-            left: 15%;
-        }
-        .bat5{
-            position: absolute;
-            height: 18%;
-            width: 7%;
-            background-color: purple;
-            border-radius: 10px 10px 0px 0px;
-            left: 12%;
-        }
-        .bat6{
-            position: absolute;
-            height: 15%;
-            width: 12%;
-            background-color: orange;
-            left: 21%;
-        }
-        .bat7{
-            position: absolute;
-            height: 12%;
-            width: 8%;
-            background-color: rgb(53,139,156);
-            left: 30%;
-        }
-        .bat8{
-            position: absolute;
-            height: 18%;
-            width: 8%;
-            background-color: purple;
-            left: 35%;
-        }
-        .bat9{
-            position: absolute;
-            height: 15%;
-            width: 6%;
-            border-radius: 10px 0px;
-            background-color: orange;
-            left: 40%;
-        }
-        .bat10{
-            position: absolute;
-            height: 10%;
-            width: 8%;
-            background-color: rgb(53,139,156);
-            left: 46%;
-        }
-        .bat11{
-            position: absolute;
-            height: 15%;
-            width: 10%;
-            background-color: purple;
-            left: 50%;
-        }
-        .bat12{
-            position: absolute;
-            height: 18%;
-            width: 8%;
-            background-color: rgb(53,139,156);
-            border-radius: 10px 10px 0px 0px;
-            left: 55%;
-        }
-        .bat13{
-            position: absolute;
-            height: 11%;
-            width: 10%;
-            background-color: orange;
-            left: 62%;
-        }
-        .bat14{
-            position: absolute;
-            height: 20%;
-            width: 8%;
-            border-radius: 0px 10px;
-            background-color: purple;
-            left: 70%;
-        }
-        .bat15{
-            position: absolute;
-            height: 16%;
-            width: 12%;
-            background-color: rgb(53,139,156);
-            left: 77%;
-        }
-        .bat16{
-            position: absolute;
-            height: 12%;
-            width: 8%;
-            background-color: orange;
-            left: 83%;
-        }
-        .bat17{
-            position: absolute;
-            height: 18%;
-            width: 10%;
-            background-color: purple;
-            left: 90%;
-        }
-        .bat18{
-            position: absolute;
-            height: 15%;
-            width: 8%;
-            background-color: orange;
-            left: 94%;
-        }
-        // batiment 2eme rangé
 
-        .bat19{
-            position: absolute;
-            height: 18%;
-            width: 5%;
-            background-color: orange;
-        }
-        .bat20{
-            position: absolute;
-            height: 15%;
-            width: 6%;
-            background-color: purple;
-            left: 8%;
-        }
-        .bat21{
-            position: absolute;
-            height: 12%;
-            width: 10%;
-            border-radius: 10px 10px 0px 0px;
-            background-color: rgb(53,139,156);
-            left: 20%;
-        }
-        .bat22{
-            position: absolute;
-            height: 17%;
-            width: 5%;
-            border-radius: 10px 10px 0px 0px;
-            background-color: orange;
-            left: 30%;
-        }
-        .bat23{
-            position: absolute;
-            height: 14%;
-            width: 7%;
-            background-color: rgb(53,139,156);
-            left: 40%;
-        }
-        .bat24{
-            position: absolute;
-            height: 11%;
-            width: 7%;
-            background-color: orange;
-            left: 49%;
-        }
-        .bat25{
-            position: absolute;
-            height: 19%;
-            width: 5%;
-            border-radius: 10px 0px;
-            background-color: purple;
-            left: 60%;
-        }
-        .bat26{
-            position: absolute;
-            height: 16%;
-            width: 8%;
-            border-radius: 0px 10px;
-            background-color: orange;
-            left: 76%;
-        }
-        .bat27{
-            position: absolute;
-            height: 13%;
-            width: 6%;
-            border-radius: 0px 10px;
-            background-color: rgb(53,139,156);
-            left: 88%;
-        }
-        .bat28{
-            position: absolute;
-            height: 20%;
-            width: 4%;
-            background-color: purple;
-            left: 19%;
-        }
-        .bat29{
-            position: absolute;
-            height: 10%;
-            width: 6%;
-            background-color: rgb(53,139,156);
-            left: 66%;
-        }
-        .bat30{
-            position: absolute;
-            height: 20%;
-            width: 6%;
-            background-color: rgb(53,139,156);
-            left: 72%;
-        }
+        
 
         
         
@@ -295,17 +102,17 @@
             z-index: 2;
         }
         
-    }
+    
     .terrace{
         position: relative;
         height: 100px;
         width: 100vw;
+        max-width: 1500px;
+        border-radius: 0px 0px 10px 10px;
         background-color: rgb(53,139,156);
         border-top: 2px solid black;
-        box-shadow: inset 10px 10px 20px rgb(247, 246, 244);
-        
+        margin-bottom: 200px;
         z-index: 300;
-        
 
         .moi{
             position: absolute;
@@ -402,3 +209,30 @@
       width: 100%;
     }
   }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .contact{
+         h2{
+            font-size: 5rem;
+            width: 450px;
+         }
+         .contact__sky{
+          width: 95%;
+         }
+         .terrace{
+          width: 95%;
+         }
+    }
+ }
