@@ -19,7 +19,56 @@
     overflow: hidden;
     transform: translate(-50%, -50%);
 
+    .menu__link{
+      margin-top: 300px;
+      width: 100%;
+      background: rgb(53,139,156);
+      animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
+      li{
+          position: relative;
+          background-color: white;
+          width: 15%;
+          max-width: 60px;
+          padding: 15px 10px 15px 10px;
+          border-radius:500px ;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 3px #10183d solid;
+          cursor: pointer; 
+          margin: 10px; 
+      }
+      a{
+          position: relative;
+          background: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+      }
+      .menu__svg{
+          width: 70%;
+          background: none;
+          
+
+      }
+      li:hover span {
+          color: white;
+      }
+      li:hover .footer__svg path {
+          fill: white;
+        }
+      li:hover{
+          background-color: #10183d;
+      }
+      span{
+          background: none;
+          color: #10183d;
+          font-weight: bold;
+      }
+      
+  }
    .menu__nav{
         color: white;
         background:none; ;
@@ -136,7 +185,18 @@
 }
 
 
+/*ANIMATION*/
 
+@keyframes slide-in-bottom {
+  0% {
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @keyframes scale-up-center {
     0% {
@@ -250,7 +310,7 @@
     }
   }
   
-  
+  /*RESPONCIVE*/
  
   @media screen and (min-width: 768px) {
    .menu__back{
@@ -258,3 +318,8 @@
     left: -200%;
    }
   }
+  @media screen and (min-width: 1024px) {
+    .menu__bar{
+      display: none;
+    }
+ }

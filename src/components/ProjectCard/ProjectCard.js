@@ -24,6 +24,7 @@ const ProjectCard = ({project}) => {
                 </div>
                 
                 <p>{project.date}</p>
+                <p>{project.techno}</p>
                 <p>{project.description}</p>
             </div>
             <div className='cartelBack'></div>

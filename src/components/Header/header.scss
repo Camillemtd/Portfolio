@@ -13,6 +13,90 @@
         background: none;
         
     }
+    .header__nav{
+        background: none;
+        ul{
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            background: none;
+            li{
+                font-size: 1.5rem;
+                margin-right: 20px;
+                background: none;
+            }
+
+        }
+        
+    }
+    .containerLink{
+        background: none;
+        
+        
+    }
+    .header__link{
+        
+        width: 100%;
+        background: none;
+        
   
-    
+        li{
+            position: relative;
+            background-color: white;
+            width: 15%;
+            max-width: 60px;
+            padding: 15px 10px 15px 10px;
+            border-radius:500px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px rgb(53,139,156) solid;
+            cursor: pointer; 
+            margin: 10px; 
+        }
+        a{
+            position: relative;
+            background: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .menu__svg{
+            width: 70%;
+            background: none;
+            
+  
+        }
+        
+        li:hover .footer__svg path {
+            fill: white;
+          }
+        li:hover{
+            background-color: rgb(53,139,156);
+        }
+        span{
+            background: none;
+            color: #10183d;
+            font-weight: bold;
+        }
+        
+    }
+    a:hover{
+        color: #F49534;
+       }
 }
+.hidden{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .containerLink{
+        display: block;
+    }
+ }
+ @media screen and (max-width: 1024px) {
+    .containerLink{
+        display: none;
+    }
+ }

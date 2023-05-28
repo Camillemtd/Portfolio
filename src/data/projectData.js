@@ -7,6 +7,7 @@ const projects =  [
         description:'My first project in React: a real estate rental application.',
         image: kasa,
         date: "avril 2023",
+        techno: "React",
         lienGit: 'https://github.com/Camillemtd/Kasa-',
         lien:'https://kasa-pi-one.vercel.app/'
 
@@ -16,6 +17,7 @@ const projects =  [
         description:'My first project to do responsive HTML and CSS integration.',
         image: booki,
         date: "décembre 2022",
+        techno:"Html,CSS",
         lienGit: 'https://github.com/Camillemtd/Booki',
         lien:'https://camillemtd.github.io/Booki/'
 
@@ -25,6 +27,7 @@ const projects =  [
         description:'My first backend project with Node.js and a MongoDB database.',
         image: grimoire,
         date: "avril 2023",
+        techno: 'NodeJs',
         lienGit:'https://github.com/Camillemtd/Mon-vieux-Grimoire-',
         lien: 'none'
         

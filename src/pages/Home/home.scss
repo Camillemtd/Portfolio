@@ -29,7 +29,10 @@
         border-top: rgb(255, 106, 0) 2px solid;
         box-shadow: 2px 2px 5px #F49534;
         
-
+        span{
+            background: none;
+            font-size: 4rem;
+        }
         
     .home__introp{
         border-radius: 100px 100px 0px 0px;
@@ -222,3 +225,11 @@
     
 }
 
+@media screen and (min-width: 1024px) {
+   .home{
+    h2{
+        font-size: 4rem;
+    }
+    
+   }
+}
