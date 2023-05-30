@@ -27,7 +27,7 @@ const ProjectCard = ({project}) => {
                 <p>{project.techno}</p>
                 <p>{project.description}</p>
             </div>
-            <div className='cartelBack'></div>
+            
         </div>
     );
 };
