@@ -8,7 +8,7 @@ const Home = () => {
         <div className='home justify--content'>
             <img src={flour1} alt='flour' className='home__intro__flour'></img>
             <div className='home__intro'>
-                <span >Camille Metard</span>
+                <span >Camille Metard <br/>Junior Web developer </span>
                 
                 <p className='home__introp'>I'm Camille and I'm a young web developer. Passionate about new technologies and the world of computer science, I decided to pursue training at OpenClassrooms to become a web developer. Thanks to this training, I have acquired strong skills in website creation and design.
                                             In this portfolio, I am delighted to present to you the various projects I have completed. Each project is the result of my dedication, creativity, and love for web development. I have worked with various technologies such as HTML, CSS, JavaScript, as well as popular frameworks like React.</p>
